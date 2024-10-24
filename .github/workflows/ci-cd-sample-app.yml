@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: Hello app CI/CD Pipeline
 
 on:
   push:
