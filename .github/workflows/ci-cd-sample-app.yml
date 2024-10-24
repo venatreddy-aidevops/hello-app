@@ -39,7 +39,6 @@ jobs:
         run: az aks get-credentials --resource-group democluster_group --name democluster
 
       - name: Deploy to AKS
-      - name: Deploy to AKS
         run: |
           kubectl apply -f k8s/deployment.yaml --namespace=mydeployments
           kubectl apply -f k8s/service.yaml --namespace=mydeployments
