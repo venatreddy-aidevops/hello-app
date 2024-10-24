@@ -22,8 +22,8 @@ registry: .venkatdemoacr.azurecr.io
  
       - name: Build Docker image
         run: |
-docker build -t .azurecr.io/your-image-name:latest .
+docker build -t .azurecr.io/hello-app:latest .
  
       - name: Push Docker image
         run: |
-docker push .azurecr.io/your-image-name:latest
+docker push .azurecr.io/hello-app:latest
