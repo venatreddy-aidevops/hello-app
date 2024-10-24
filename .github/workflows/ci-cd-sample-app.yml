@@ -40,5 +40,5 @@ jobs:
 
       - name: Deploy to AKS
         run: |
-          kubectl set image deployment/hello-app hello-app=venkatdemoacr.azurecr.io/hello-app:latest --record
+          kubectl set image deployment/hello-app hello-app=venkatdemoacr.azurecr.io/hello-app:latest
           kubectl rollout status deployment/hello-app
